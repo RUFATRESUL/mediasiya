@@ -13,12 +13,12 @@ export const Register = () => {
       event.preventDefault();
     };
   return (
-    <div className='bg-black py-28'>
-    <div className='w-[32rem] h-[54rem] bg-gray-900 rounded-lg m-auto '>
-        <div className='text-center space-y-4 py-10'>
+    <div className='bg-black py-28 sm:w-full'>
+    <div className='w-[32rem] h-[54rem] bg-gray-900 rounded-lg m-auto sm:w-full '>
+        <div className='text-center space-y-4 py-10 sm:m-auto'>
 
         {/* <h2 className='text-white font-extrabold text-2xl font-mono '>Moviak.com</h2> */}
-        <img className='ml-44' src={LogoOne} alt="" />
+        <img className='m-auto' src={LogoOne} alt="" />
         <h1 className='text-white font-[700] text-2xl'>Qeydiyyatdan keçin</h1>
         <div className='flex flex-row space-x-1 justify-center'>
 

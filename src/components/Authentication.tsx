@@ -16,24 +16,18 @@ export const Authentication = () => {
   };
 
   return (
-    <div className='bg-black py-28'>
-        <div className='w-[32rem] h-[44rem] bg-gray-900 rounded-lg m-auto'>
+    <div className='bg-black py-28 sm:w-full'>
+        <div className='w-[32rem] h-[44rem] bg-gray-900 rounded-lg m-auto sm:w-full'>
             <div className='text-center space-y-4 py-10'>
-
-            {/* <h2 className='text-white font-extrabold text-2xl font-mono '>Moviak.com</h2> */}
-            <img className='ml-44' src={LogoOne} alt="" />
+            <img className='m-auto' src={LogoOne} alt="" />
             <h1 className='text-white font-[700] text-2xl'>Daxil olun</h1>
             <div className='flex flex-row space-x-1 justify-center'>
-
             <p className='text-gray-300 font-light'>və ya </p>
             <Link to='/register'><p className='text-blue-500'>qeydiyyatdan kecin</p></Link>
             </div>
-            
             </div>
             <div className='flex flex-col space-y-20'>
-             
             <TextField id="filled-basic" label="E-poct/Username" focused sx={{width:390,margin:'auto','& input':{color:'white'}}} />
- 
             <FormControl sx={{ m: 1,margin:'auto' }} focused variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
           <OutlinedInput

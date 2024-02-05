@@ -11,6 +11,8 @@ import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import AddCommentIcon from '@mui/icons-material/AddComment';
 import ClearIcon from '@mui/icons-material/Clear';
+import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
+import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
 import Image01 from '../assert/V2sUGyuG1fLMSdf2V91nkCvwGySfHd-metaRkJfSU1HXzE3MDM4MzQ2NDAzOTkuanBn-.webp'
 import Image02 from '../assert/JJJbJV5MzQqlIHdc37wULKLNDvUpaQ-metaRkJfSU1HXzE3MDYwMzA5ODA0MzcuanBn-.webp'
 import Image03 from '../assert/f7vJL7VpfWCETlmo2AtOaW1d0RZk82-metaX2lubmV3c18wYmYwZTJmOWI5N2Y3Y2RjYzIyODk4NjMxX28uanBn-.webp'
@@ -102,13 +104,13 @@ export const Detail:React.FC = () => {
                       <div className='pt-6 w-[52%] m-auto sm:w-full md:w-full'>
 
                         <hr className='w-full' />
-                        {/* <div className=' flex justify-around items-center'>
-                        <div className='bg-blue-600 rounded-lg p-1 text-white absolute left-[26rem]'>Dunya</div>
-                        <div className='relative'>
-                        <IconButton className='absolute right-[-17rem]'><ThumbUpOffAltIcon/>3</IconButton>
-                        <IconButton className='absolute right-[-17rem]'><ThumbDownOffAltIcon/>0</IconButton>
+                        <div className=' flex justify-between items-center sm:justify-around  '>
+                        <div className='bg-blue-600 rounded-lg p-1 text-white'>Dunya</div>
+                        <div>
+                        <IconButton><ThumbUpOffAltIcon/>3</IconButton>
+                        <IconButton><ThumbDownOffAltIcon/>0</IconButton>
                         </div>
-                        </div> */}
+                        </div>
                         <hr className='w-full' />
                         </div>
                   </div>
@@ -118,12 +120,12 @@ export const Detail:React.FC = () => {
                 <Button className='w-full sm:w-full h-12' variant="outlined" onClick={()=>setOpen(true)}><IconButton ><AddCommentIcon/></IconButton></Button>
                 <Drawer open={open} anchor='bottom' onClose={()=>setOpen(false)}>
                   <IconButton onClick={()=>setOpen(false)}><ClearIcon className='absolute right-2 top-2'/></IconButton>
-                  <Box textAlign="center" sx={{display:'flex',flexDirection:'column',marginX:40, marginY:6}}>
+                  <Box textAlign="center" sx={{display:'flex',flexDirection:'column',marginX:'5%', marginY:'2rem'}}>
                         <Typography variant='h6'sx={{color:'blue'}}>AR Ədliyyə Nazirliyinin Ədliyyə Akademiyasında mediatorların imtahanı keçirilib. məqaləsinə şərh yazmaq</Typography>
-                        <TextField variant='outlined' label='Ad və Soyad' sx={{marginTop:6}}/>
-                        <TextField variant='outlined' label='E-poct unvani'sx={{marginTop:6}}/>
-                        <Textarea minRows={6} sx={{marginTop:6}} placeholder='Şərhiniz daxil edin' />
-                        <Box sx={{display:'flex',justifyContent:'space-between', alignItems:'center',marginTop:2}}>
+                        <TextField variant='outlined' label='Ad və Soyad' sx={{marginTop:'1rem'}}/>
+                        <TextField variant='outlined' label='E-poct unvani'sx={{marginTop:'1rem'}}/>
+                        <Textarea minRows={6} sx={{marginTop:'1rem'}} placeholder='Şərhiniz daxil edin' />
+                        <Box sx={{display:'flex',justifyContent:'space-between', alignItems:'center',marginTop:'1rem'}}>
                           <Button sx={{border:'solid',borderColor:'gray',borderWidth:1}}>Ləğv et</Button>
                           <Button sx={{backgroundColor:'blue',color:'white',":hover":{color:'blue'}}}>Göndər</Button>
                         </Box>
@@ -142,7 +144,7 @@ export const Detail:React.FC = () => {
     ))}
        <Box sx={{flexGrow:1,paddingX:5}}>
                   <Grid container spacing={2} sx={{marginTop:0}}>
-                  <Grid item xs={12} sm={12} md={6} lg={4} sx={{width:370}}>
+                  <Grid item xs={12} sm={12} md={6} lg={4}>
                    <Card sx={{marginTop:'40px'}}>
                    <CardMedia
                    sx={{height:240}}
@@ -156,13 +158,13 @@ export const Detail:React.FC = () => {
                    </CardContent>
                    <CardActions>
                      <IconButton>
-                       <ThumbUpIcon/>
+                       <ThumbUpIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <ThumbDownAltIcon/>
+                       <ThumbDownAltIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <RemoveRedEyeIcon/>
+                       <RemoveRedEyeIcon sx={{width:20}}/>
                      </IconButton>
                    </CardActions>
                                   
@@ -182,13 +184,13 @@ export const Detail:React.FC = () => {
                    </CardContent>
                    <CardActions>
                      <IconButton>
-                       <ThumbUpIcon/>
+                       <ThumbUpIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <ThumbDownAltIcon/>
+                       <ThumbDownAltIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <RemoveRedEyeIcon/>
+                       <RemoveRedEyeIcon sx={{width:20}}/>
                      </IconButton>
                    </CardActions>
                                   
@@ -208,13 +210,13 @@ export const Detail:React.FC = () => {
                    </CardContent>
                    <CardActions>
                      <IconButton>
-                       <ThumbUpIcon/>
+                       <ThumbUpIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <ThumbDownAltIcon/>
+                       <ThumbDownAltIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <RemoveRedEyeIcon/>
+                       <RemoveRedEyeIcon sx={{width:20}}/>
                      </IconButton>
                    </CardActions>
                                   
@@ -234,13 +236,13 @@ export const Detail:React.FC = () => {
                    </CardContent>
                    <CardActions>
                      <IconButton>
-                       <ThumbUpIcon/>
+                       <ThumbUpIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <ThumbDownAltIcon/>
+                       <ThumbDownAltIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <RemoveRedEyeIcon/>
+                       <RemoveRedEyeIcon sx={{width:20}}/>
                      </IconButton>
                    </CardActions>
                                   
@@ -260,13 +262,13 @@ export const Detail:React.FC = () => {
                    </CardContent>
                    <CardActions>
                      <IconButton>
-                       <ThumbUpIcon/>
+                       <ThumbUpIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <ThumbDownAltIcon/>
+                       <ThumbDownAltIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <RemoveRedEyeIcon/>
+                       <RemoveRedEyeIcon sx={{width:20}}/>
                      </IconButton>
                    </CardActions>
                                   
@@ -286,13 +288,13 @@ export const Detail:React.FC = () => {
                    </CardContent>
                    <CardActions>
                      <IconButton>
-                       <ThumbUpIcon/>
+                       <ThumbUpIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <ThumbDownAltIcon/>
+                       <ThumbDownAltIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <RemoveRedEyeIcon/>
+                       <RemoveRedEyeIcon sx={{width:20}}/>
                      </IconButton>
                    </CardActions>
                                   
@@ -312,13 +314,13 @@ export const Detail:React.FC = () => {
                    </CardContent>
                    <CardActions>
                      <IconButton>
-                       <ThumbUpIcon/>
+                       <ThumbUpIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <ThumbDownAltIcon/>
+                       <ThumbDownAltIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <RemoveRedEyeIcon/>
+                       <RemoveRedEyeIcon sx={{width:20}}/>
                      </IconButton>
                    </CardActions>
                                   
@@ -338,13 +340,13 @@ export const Detail:React.FC = () => {
                    </CardContent>
                    <CardActions>
                      <IconButton>
-                       <ThumbUpIcon/>
+                       <ThumbUpIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <ThumbDownAltIcon/>
+                       <ThumbDownAltIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <RemoveRedEyeIcon/>
+                       <RemoveRedEyeIcon sx={{width:20}}/>
                      </IconButton>
                    </CardActions>
                                   
@@ -364,13 +366,13 @@ export const Detail:React.FC = () => {
                    </CardContent>
                    <CardActions>
                      <IconButton>
-                       <ThumbUpIcon/>
+                       <ThumbUpIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <ThumbDownAltIcon/>
+                       <ThumbDownAltIcon sx={{width:20}}/>
                      </IconButton>
                      <IconButton>
-                       <RemoveRedEyeIcon/>
+                       <RemoveRedEyeIcon sx={{width:20}}/>
                      </IconButton>
                    </CardActions>
                                   
