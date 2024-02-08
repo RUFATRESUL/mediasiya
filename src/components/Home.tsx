@@ -19,7 +19,7 @@ export const Home = () => {
   const data =[
     {
       id:1,
-      image:'http://localhost:3000/static/media/mucGMvNOgpCNk3geMuAnblcwMCdnqi-metaRkJfSU1HXzE3MDYyOTM3MDk5MDEuanBn-.b1930012435b6a127caf.webp',
+      image:'https://mediasiya.tv/son-xeberler/mohterem-cenab-prezident-ilham-eliyev-terefinden-bu-gun-mediasiya-haqqinda-azerbaycan-respublikasinin-qanununa-edilmis-deyisiklik-oz-tesdiqini-tapib',
       content:"Möhtərəm cənab Prezident İlham Əliyev tərəfindən bu gün..."
     },
     {
@@ -96,27 +96,27 @@ export const Home = () => {
   const images = [
     {
       id:1,
-      image:"http://localhost:3000/static/media/Dro1jaM40NGNLhaDjyiDWYDUjDseKr-metaUlpiZWNTNjNibzdhUHJCaEQxUml3RE5ReGhrSGRNUkMzNGgwSVhEMS5wbmc=-.3fc7fe7165d7ceb44255.webp"
+      image:"https://president.az/"
     },
     {
       id:2,
-      image:"http://localhost:3000/static/media/XEpbpdz8EgkUmjaMZXFtvi15h8haEi-metabWJacktQWFlZYlFwcUgyQnhpWE9UYWliN3V0ZlFFRHlUUmNDNGh0ei5wbmc=-.1e10135916b199a00073.webp"
+      image:"https://mehriban-aliyeva.az/"
     },
     {
       id:3,
-      image:"http://localhost:3000/static/media/9htxo9E2MK4PMvzRYy41G2xUjTpq1P-metaVG5PVFFORDAwMzBiR2luUlB6ak01S3ZhaEFMWDhKemVMTjNRcGR2bi5wbmc=-.d5ed15d4dad3786cc858.webp"
+      image:"https://heydar-aliyev-foundation.org/az"
     },
     {
       id:4,
-      image:"http://localhost:3000/static/media/AasY2cxuXgHagWxnx1WGhcMg0fLCgp-metaaGdmY3BpS0c5TUV4dGFoRnN1emlGcHp4MGhiNGlXSkh3T3FBRHd1ci5wbmc=-.41af7a673e97a20bb53e.webp"
+      image:"https://www.virtualkarabakh.az/"
     },
     {
       id:5,
-      image:"http://localhost:3000/static/media/lxl0T8DhcRskUy5ScymAr7b4fboRZz-metaaUx5d05uUVRpNzdhNUhWN0JzMmNxcU5RMXZLMWtHNEo1VkJtMGZZaS5wbmc=-.59752e4c1c3d07834ae8.webp"
+      image:"https://azerbaijan.az/"
     },
     {
       id:6,
-      image:"http://localhost:3000/static/media/T8UqlNz1ZdL3faTwoJk7q1RSC9zsX1-metaQXJ0Ym9hcmQgMS5qcGc=-.a2f64b25771cb6e14c35.webp"
+      image:"https://edu.e-cbar.az/"
     },
     {
       id:7,
@@ -124,7 +124,7 @@ export const Home = () => {
     },
     {
       id:8,
-      image:"http://localhost:3000/static/media/KlrQmyh6u5Z04Jx1LNC0pw4RtQClkJ-metaQXJ0Ym9hcmQgMSBjb3B5IDIuanBn-.28c01bd9c79fdba14c08.webp"
+      image:"https://bizimpullar.az/"
     },
   ]
   const startIndex = (page-1)*ItemsPerPage
