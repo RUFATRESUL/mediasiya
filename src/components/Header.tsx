@@ -133,9 +133,9 @@ export const Header = () => {
             </Typography>
           </AccordionDetails>
             </Accordion>
-              {pages.map((page) => (
+              {pages.map((page,index) => (
                 <>
-                <MenuItem key={page} onClick={handleCloseNavMenu} sx={{color:'grey'}}>
+                <MenuItem key={index} onClick={handleCloseNavMenu} sx={{color:'grey'}}>
                   <Typography textAlign="center"sx={{fontSize:17}} component={Link} to={`/${page.toLowerCase().replace(/\s+/g, '-')}`}>{page}</Typography>
                   <ChevronRightIcon sx={{position:'absolute',right:20}}/>
                   
@@ -188,8 +188,8 @@ export const Header = () => {
 
       
           >
-            {details.map((detail)=>(
-                <MenuItem key={detail} onClick={()=>setMediasiya(false)}>
+            {details.map((detail,index)=>(
+                <MenuItem key={index} onClick={()=>setMediasiya(false)}>
                     <Typography textAlign="center">{detail}</Typography>
                     
                 </MenuItem>
@@ -198,9 +198,9 @@ export const Header = () => {
 
           </Menu>
             
-            {pages.map((page) => (
+            {pages.map((page,index) => (
               <Button
-                key={page}
+                key={index}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 3, color: 'white', display: 'block',mr:3,fontWeight:500,fontSize:15,fontFamily:'inherit' }}
                 component={Link}
