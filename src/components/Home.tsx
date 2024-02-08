@@ -124,7 +124,7 @@ export const Home = () => {
     },
     {
       id:8,
-      image:"https://bizimpullar.az/"
+      image:"http://localhost:3000/static/media/KlrQmyh6u5Z04Jx1LNC0pw4RtQClkJ-metaQXJ0Ym9hcmQgMSBjb3B5IDIuanBn-.28c01bd9c79fdba14c08.webp"
     },
   ]
   const startIndex = (page-1)*ItemsPerPage
