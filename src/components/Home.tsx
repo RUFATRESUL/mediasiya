@@ -96,27 +96,27 @@ export const Home = () => {
   const images = [
     {
       id:1,
-      image:"https://president.az/"
+      image:"https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F15%2FDro1jaM40NGNLhaDjyiDWYDUjDseKr-metaUlpiZWNTNjNibzdhUHJCaEQxUml3RE5ReGhrSGRNUkMzNGgwSVhEMS5wbmc%3D-.png&w=256&q=75"
     },
     {
       id:2,
-      image:"https://mehriban-aliyeva.az/"
+      image:"https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F16%2FXEpbpdz8EgkUmjaMZXFtvi15h8haEi-metabWJacktQWFlZYlFwcUgyQnhpWE9UYWliN3V0ZlFFRHlUUmNDNGh0ei5wbmc%3D-.png&w=256&q=75"
     },
     {
       id:3,
-      image:"https://heydar-aliyev-foundation.org/az"
+      image:"https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F17%2F9htxo9E2MK4PMvzRYy41G2xUjTpq1P-metaVG5PVFFORDAwMzBiR2luUlB6ak01S3ZhaEFMWDhKemVMTjNRcGR2bi5wbmc%3D-.png&w=256&q=75"
     },
     {
       id:4,
-      image:"https://www.virtualkarabakh.az/"
+      image:"https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F18%2FAasY2cxuXgHagWxnx1WGhcMg0fLCgp-metaaGdmY3BpS0c5TUV4dGFoRnN1emlGcHp4MGhiNGlXSkh3T3FBRHd1ci5wbmc%3D-.png&w=256&q=75"
     },
     {
       id:5,
-      image:"https://azerbaijan.az/"
+      image:"https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F19%2Flxl0T8DhcRskUy5ScymAr7b4fboRZz-metaaUx5d05uUVRpNzdhNUhWN0JzMmNxcU5RMXZLMWtHNEo1VkJtMGZZaS5wbmc%3D-.png&w=256&q=75"
     },
     {
       id:6,
-      image:"https://edu.e-cbar.az/"
+      image:"https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F93%2FKlrQmyh6u5Z04Jx1LNC0pw4RtQClkJ-metaQXJ0Ym9hcmQgMSBjb3B5IDIuanBn-.jpg&w=256&q=75"
     },
     {
       id:7,
@@ -124,7 +124,7 @@ export const Home = () => {
     },
     {
       id:8,
-      image:"http://localhost:3000/static/media/KlrQmyh6u5Z04Jx1LNC0pw4RtQClkJ-metaQXJ0Ym9hcmQgMSBjb3B5IDIuanBn-.28c01bd9c79fdba14c08.webp"
+      image:"https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F93%2FKlrQmyh6u5Z04Jx1LNC0pw4RtQClkJ-metaQXJ0Ym9hcmQgMSBjb3B5IDIuanBn-.jpg&w=256&q=75"
     },
   ]
   const startIndex = (page-1)*ItemsPerPage
