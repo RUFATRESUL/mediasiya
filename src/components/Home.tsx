@@ -19,7 +19,7 @@ export const Home = () => {
   const data =[
     {
       id:1,
-      image:'https://mediasiya.tv/son-xeberler/mohterem-cenab-prezident-ilham-eliyev-terefinden-bu-gun-mediasiya-haqqinda-azerbaycan-respublikasinin-qanununa-edilmis-deyisiklik-oz-tesdiqini-tapib',
+      image:'https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F194%2FmucGMvNOgpCNk3geMuAnblcwMCdnqi-metaRkJfSU1HXzE3MDYyOTM3MDk5MDEuanBn-.webp&w=1920&q=75',
       content:"Möhtərəm cənab Prezident İlham Əliyev tərəfindən bu gün..."
     },
     {
