@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
-        <Route path='/home' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/haqqımızda' element={<About/>}/>
         <Route path='/login' element={<Authentication/>}/>
         <Route path='/register' element={<Register/>}/>
