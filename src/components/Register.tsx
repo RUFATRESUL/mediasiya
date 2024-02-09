@@ -29,15 +29,15 @@ export const Register = () => {
         </div>
         <div className='flex flex-col space-y-20'>
          
-        <TextField id="filled-basic" label="Ad" focused sx={{width:390,margin:'auto','& input':{color:'white'}}} />
-        <TextField id="filled-basic" label="E-poct unvani" focused sx={{width:390,margin:'auto','& input':{color:'white'}}} />
+        <TextField id="filled-basic" label="Ad" focused sx={{width:'100%',margin:'auto','& input':{color:'white'},maxWidth:'390px'}} />
+        <TextField id="filled-basic" label="E-poct unvani" focused sx={{width:'100%',margin:'auto','& input':{color:'white'},maxWidth:'390px'}} />
  
-        <FormControl sx={{ m: 1,margin:'auto' }} focused variant="outlined">
+        <FormControl sx={{ m: 1,margin:'auto',width:'100%',maxWidth:'390px' }} focused variant="outlined" >
             <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
             <OutlinedInput
                 id="outlined-adornment-password"
                 type={showPassword ? 'text' : 'password'}
-                sx={{color:'white',width:390}}
+                sx={{color:'white'}}
                 endAdornment={
             <InputAdornment position="end">
             <IconButton
@@ -55,12 +55,12 @@ export const Register = () => {
             />
             
             </FormControl>
-            <FormControl sx={{ m: 1,margin:'auto' }} focused variant="outlined">
+            <FormControl sx={{ m: 1,margin:'auto',width:'100%',maxWidth:'390px' }} focused variant="outlined">
             <InputLabel htmlFor="outlined-adornment-password">Parol tesdiqi</InputLabel>
             <OutlinedInput
                 id="outlined-adornment-password"
                 type={showPassword ? 'text' : 'password'}
-                sx={{color:'white',width:390}}
+                sx={{color:'white'}}
                 endAdornment={
             <InputAdornment position="end">
             <IconButton
@@ -78,7 +78,7 @@ export const Register = () => {
             />
             
             </FormControl>
-            <Button variant='contained' color='primary' sx={{width:410,margin:'auto'}}>Daxil Olun</Button>
+            <Button variant='contained' color='primary' sx={{width:'100%',margin:'auto',maxWidth:'410px'}}>Daxil Olun</Button>
               
         </div>
 

@@ -10,6 +10,7 @@ import { Register } from './components/Register';
 import { Authentication } from './components/Authentication';
 import { Detail } from './components/Detail';
 import { Contact } from './components/Contact';
+import { ForgotPassword } from './components/ForgotPassword';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/haqqımızda' element={<About/>}/>
         <Route path='/login' element={<Authentication/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/forgotPassword' element={<ForgotPassword/>}/>
         <Route path='/home/:detailId' element={<Detail/>} />
         <Route path='/əlaqə' element={<Contact/>}/>
       </Routes>

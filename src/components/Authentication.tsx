@@ -27,15 +27,17 @@ export const Authentication = () => {
             </div>
             </div>
             <div className='flex flex-col space-y-20'>
-            <TextField id="filled-basic" label="E-poct/Username" focused sx={{width:390,margin:'auto','& input':{color:'white'}}} />
+            <TextField id="filled-basic" label="E-poct/Username" sx={{width:'100%',margin:'auto',maxWidth:'390px'}} focused />
             
-              <FormLabel>Şifrəni unutmuşam</FormLabel>
-            <FormControl sx={{ m: 1,margin:'auto' }} focused variant="outlined">
-          <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+            <FormControl sx={{ margin:'auto',width:'100%',maxWidth:'390px' }} variant="outlined" focused>
+              <Link to='/forgotPassword'>
+              <Typography sx={{position:'absolute',display:'inline',right:0,top:-30,color:'blue'}}>Şifrəni unutmuşam</Typography>
+              </Link>
+            <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
             type={showPassword ? 'text' : 'password'}
-            sx={{color:'white',width:390,marginTop:5}}
+            sx={{}}
             endAdornment={
               <InputAdornment position="end">
                 <IconButton
@@ -55,7 +57,7 @@ export const Authentication = () => {
             <FormGroup>
                 <FormControlLabel value="end" labelPlacement='end' required control={ <Checkbox sx={{color:'white',marginLeft:8}} />} label="Yadda Saxla"sx={{color:'white'}}/>
             </FormGroup>
-            <Button variant='contained' color='primary' sx={{width:410,margin:'auto'}}>Daxil Olun</Button>
+            <Button variant='contained' color='primary' sx={{width:'100%',margin:'auto',maxWidth:'410px'}}>Daxil Olun</Button>
                   
             </div>
 
