@@ -57,6 +57,9 @@ export const Contact = () => {
                     </Grid>
                 </Grid>
             </Box>
+            <Box sx={{marginTop:10,border:2,padding:4,borderRadius:5}}>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189.84755439032844!2d49.90965059996372!3d40.41857791939419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d72437970e9%3A0xdfab64580911af87!2zTWVkaWFzaXlhIMWedXJhc8Sx!5e0!3m2!1str!2saz!4v1707427312636!5m2!1str!2saz" width="1000" height="420" style={{margin:'auto',display:'block'}} loading="lazy"></iframe>
+            </Box>
 
         </Container>
     </div>

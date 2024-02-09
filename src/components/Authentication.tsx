@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { TextField,Checkbox,FormControlLabel,FormGroup,Button,Box,FormControl,InputAdornment,InputLabel,OutlinedInput,IconButton } from '@mui/material'
+import { TextField,Checkbox,FormControlLabel,FormGroup,Button,Box,FormControl,InputAdornment,InputLabel,OutlinedInput,IconButton,Typography,FormLabel } from '@mui/material'
 import Visibility from '@mui/icons-material/Visibility'
 import VisibilityOff from '@mui/icons-material/VisibilityOff'
 import LogoOne from '../assert/img_65.png'
@@ -28,12 +28,14 @@ export const Authentication = () => {
             </div>
             <div className='flex flex-col space-y-20'>
             <TextField id="filled-basic" label="E-poct/Username" focused sx={{width:390,margin:'auto','& input':{color:'white'}}} />
+            
+              <FormLabel>Şifrəni unutmuşam</FormLabel>
             <FormControl sx={{ m: 1,margin:'auto' }} focused variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
             type={showPassword ? 'text' : 'password'}
-            sx={{color:'white',width:390}}
+            sx={{color:'white',width:390,marginTop:5}}
             endAdornment={
               <InputAdornment position="end">
                 <IconButton

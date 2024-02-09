@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import Clear from '@mui/icons-material/Clear';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import LogoOne from '../assert/img_65.png'
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const pages = ['Siyasət','İqtisadiyyat','Cəmiyyət','Mədəniyyət','Haqqımızda','Əlaqə'];
 const details = ['Aile Mubahiseleri uzre mediasiya','Mediasiya yenilikleri','Mediasiya surasinin yenilikleri','Emek mubahiseleri uzre mediasiya','Kommersiya mubahiseleri uzre mediasiya','Istehlak mubahiseleri uzre mediasiya','Mediasiya teskilatlarinin fealiyyeti','Mediasiya bulletini']
@@ -27,7 +28,7 @@ export const Header = () => {
     }
     
   return (
-    <AppBar position="static" sx={{bgcolor:'indigo',height:90}}>
+    <AppBar position="static" sx={{bgcolor:'blue',height:90}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
          
@@ -35,7 +36,7 @@ export const Header = () => {
             variant="h6"
             noWrap
             component={Link}
-            to="/home"
+            to="/"
             sx={{
               mr: 14,
               display: { xs: 'none', lg: 'flex' },
@@ -71,17 +72,24 @@ export const Header = () => {
                 display: { xs: 'block', md: 'none' },
                 '& .MuiDrawer-paper': { boxSizing: 'border-box',width:470 }
               }}
-              
-            >
+              >
               <h1 className='pb-3 pl-3 text-lg'>Naviqasiya</h1>
-              <Button sx={{position:'absolute',display:'inline-block',right:3}} onClick={()=>setAnchorElNav(false)}>
-
+              <Button sx={{
+              position:'absolute',
+              display:'inline',
+              top:2,
+              right:10,
+              '@media(max-width: 446px)': {
+              top:2,
+              right: 109,},
+              
+              }} onClick={()=>setAnchorElNav(false)}>
               <Clear/>
               </Button>
               <Accordion>
-          <AccordionSummary
-            expandIcon={<ChevronRightIcon />}
-          >
+                <AccordionSummary
+                   expandIcon={<ChevronRightIcon />}
+                 >
             <Typography textAlign="center" sx={{ fontSize: 17, color: 'grey' }}>Medasiya</Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -138,7 +146,6 @@ export const Header = () => {
                 <MenuItem key={index} onClick={handleCloseNavMenu} sx={{color:'grey'}}>
                   <Typography textAlign="center"sx={{fontSize:17}} component={Link} to={`/${page.toLowerCase().replace(/\s+/g, '-')}`}>{page}</Typography>
                   <ChevronRightIcon sx={{position:'absolute',right:20}}/>
-                  
                 </MenuItem>
                 </>
               ))}
@@ -149,7 +156,7 @@ export const Header = () => {
             variant="h5"
             noWrap
             component={Link}
-            to='/home'
+            to='/'
             sx={{
               
               display: { xs: 'flex', md: 'none' },
@@ -166,8 +173,13 @@ export const Header = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
           <Tooltip title="Open settings">
-            <Button onClick={()=>setMediasiya(true)} sx={{color:'white'}}>
+            <Button  
+            onMouseEnter={()=>setMediasiya(true)} 
+           
+            sx={{color:'white',cursor:'pointer'}} >
                 Mediasiya
+                {/* onClick={()=>setMediasiya(true)} */}
+                <KeyboardArrowDownIcon/>
             </Button>
           </Tooltip>
           <Menu
@@ -185,8 +197,10 @@ export const Header = () => {
           keepMounted
           open={mediasiya}
           onClose={()=>setMediasiya(false)}
-
-      
+          onMouseEnter={()=>setMediasiya(true)}
+          
+          
+         
           >
             {details.map((detail,index)=>(
                 <MenuItem key={index} onClick={()=>setMediasiya(false)}>
@@ -194,8 +208,6 @@ export const Header = () => {
                     
                 </MenuItem>
             ))}
-            
-
           </Menu>
             
             {pages.map((page,index) => (
