@@ -165,7 +165,8 @@ export const Home = () => {
   };
 
   return (
-    <Box sx={{marginX:10}}>
+    <Container maxWidth='xl'>
+
       <Box>
         <Grid container spacing={2} sx={{marginTop:4}}>
           
@@ -272,7 +273,7 @@ export const Home = () => {
         <Grid item xs={12} sm={6} md={4} lg={3} key={itemImage.id}>
          
             <Link to={itemImage.link} key={itemImage.id}>
-          <img className=' sm:w-full sm:h-[9rem] w-[13rem] h-[5rem] hover:scale-110 transition-transform duration-500 ease-in-out' src={itemImage.image} alt="" />
+          <img className=' sm:w-full sm:h-[11rem] w-[13rem] h-[5rem] hover:scale-110 transition-transform duration-500 ease-in-out' src={itemImage.image} alt="" />
             </Link>
          
         </Grid>
@@ -280,7 +281,8 @@ export const Home = () => {
        
       </Grid>
       </Box>
-    </Box>
+    </Container>
+    
     
   )
 }
