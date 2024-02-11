@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import {Card,CardMedia,CardContent,CardActions,Typography,IconButton,Box,Grid, Container, Button,Pagination} from '@mui/material'
+import CardCover from '@mui/joy/CardCover'
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import {Link} from 'react-router-dom'
 
 export const Home = () => {
@@ -127,6 +129,31 @@ export const Home = () => {
       link:'https://bizimpullar.az/'
     },
   ]
+  const titleImage = [
+    {
+      id:1,
+      image:'https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F220%2FykRFF7ZpiUhgj4qArvdx7JlBE5figO-metaRkJfSU1HXzE3MDc1NTEzNjA5OTkuanBn-.webp&w=1080&q=75',
+      content:'Tələbələrin Mediasiya Şurasında tədris-istehsalat təcrübələri başa çatıb.'
+    },
+    {
+      id:2,
+      image:'https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F219%2FBdn8ZtrRxFfv1olPOsJwds79OM2kWn-metaMTIyZTYwYWYtY2NiZS00MjdhLThjMmUtN2FkM2FiMDgzYWRhICgxKS5qcGc%3D-.webp&w=1920&q=75',
+      content:'Nadir Adilov: “2023-cü uğurlu nəticəmiz 51.4% olmuşdur - HESABAT.”'
+    },
+    {
+      id:3,
+      image:'https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F217%2FOX16aaLf5aDbtsXShRBYPbnh6xOn3v-metaMTY4ODUzNDgzOV8zNTc3ODE2MTNfNTcyMjY3NzU1MTExNTg3XzYzODU3ODU3NjU1ODAwODE5MjdfbiAoMikuanBn-.webp&w=1920&q=75',
+      content:'Bərdə 1 saylı Mediasiya Təşkilatı Mediasiya Şurası üzvlüyünə qəbul edildi.'
+      
+    },
+    {
+      id:4,
+      image:'https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F218%2FKuCmxbvC4CEIEwKPxPDS8NKS2ZLJC8-metaOWIxYjZlMzRmYTJhYjZjMmNiOWI3NTYzNzdmOTg1NWMuanBn-.webp&w=1920&q=75',
+      content:'Mediasiya haqqında Azərbaycan Respublikasının Qanunu”nun təbliği ilə '
+    },
+    
+  ]
+
 
 
   const startIndex = (page-1)*ItemsPerPage
@@ -139,8 +166,55 @@ export const Home = () => {
 
   return (
     <Box sx={{marginX:10}}>
-      <Box >
+      <Box>
+        <Grid container spacing={2} sx={{marginTop:4}}>
+          
+          <Grid item xs={12} sm={12} md={6} lg={6} sx={{width:'50%'}}>
+              <Card sx={{height:'536', width: '100%' }}>
+                  <CardCover sx={{ position: 'relative' }}>
+                        <img src='https://mediasiya.tv/_next/image?url=https%3A%2F%2Fpanel.mediasiya.tv%2Fstorage%2F215%2FJaqCemmrj9S9XG8lGU0gyU2NiFTrKE-metaRkJfSU1HXzE3MDcwNTU3MDgxOTEuanBn-.webp&w=1920&q=75' alt="" />
+                        <Box sx={{ position: 'absolute', bottom: 0, left: 0, width: '100%', background: 'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)', height: '100%', boxSizing: 'border-box' }}>
+                        </Box>
+                        <CardContent sx={{position:'absolute',bottom:0,left:0,width:'100%',boxSizing:'border-box',padding:'23px'}}>
+                    <Button sx={{bgcolor:'blue' ,color:'white'}}>Son xeberler</Button>
+                    <Typography sx={{color:'white',marginTop:2,fontSize:20}}>Türk Dünyası Mediatorlar Birliyinin rəhbərliyi Bakı 15 saylı mediasiya toplantisi ...</Typography>
+                   <CardActions >
+                   <IconButton sx={{fontSize:16,color:'white'}}>
+                      <AccessTimeIcon sx={{width:20,marginRight:1}}/>14 saat evvel
+                      </IconButton>
+                      <IconButton sx={{fontSize:16,color:'white'}}>
+                      <RemoveRedEyeIcon sx={{width:20,marginRight:1}}/>5
+                      </IconButton>
+                   </CardActions>
+                  </CardContent>
+                  </CardCover>
+              </Card>
+          </Grid>
+          <Grid container spacing={2} item xs={12} sm={12} md={6} lg={6} sx={{width:'50%'}}>
+              {titleImage.map((item)=>(
+            <Grid item xs={12} sm={6} md={6} lg={6}  key={item.id}>
 
+            <Card sx={{height: '500', width: '100%' }}>
+                  <CardCover sx={{ position: 'relative' }}>
+                        <img src={item.image} alt="" />
+                        <Box sx={{ position: 'absolute', bottom: 0, left: 0, width: '100%', background: 'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)', height: '100%', boxSizing: 'border-box' }}>
+                        </Box>
+                        <CardContent sx={{position:'absolute',bottom:0,left:0,width:'100%',boxSizing:'border-box',padding:'23px'}}>
+                    <Button sx={{bgcolor:'blue' ,color:'white'}}>Son xeberler</Button>
+                    <Typography sx={{color:'white',marginTop:2,fontSize:15}}>{item.content}</Typography>
+                   
+                  </CardContent>
+                  </CardCover>
+              </Card>
+            </Grid>
+              ))}
+
+          </Grid>
+      
+        </Grid>
+      </Box>
+
+      <Box >
       <Grid container spacing={2} sx={{marginTop:0}}>
         {ItemsShow.map((item)=>(
         <Grid item xs={12} sm={6} md={4} lg={3} key={item.id} >

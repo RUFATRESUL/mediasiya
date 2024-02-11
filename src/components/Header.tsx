@@ -231,10 +231,10 @@ export const Header = () => {
                 
               </IconButton>
               <Drawer open={isOpen} anchor='top' onClose={()=>setIsOpen(false)} sx={{height:100}}>
-                <Box sx={{height:100}}>
+                <Box sx={{ marginX:'auto',height:100,width:'50%','@media(min-width:200px) and (max-width:600px)':{width:'100%'}}}>
 
-                <TextField id="outlined-basic" label='Axtarış' sx={{position:'absolute',top:22,left:130,width:400}} />
-                <Search sx={{position:'absolute',left:490,top:40,fontSize:28,color:'pink'}}/>
+                <TextField id="outlined-basic" label='Axtarış' sx={{width:'100%',marginTop:3,'@media(min-width:200px) and (max-width:600px)':{width:'100%'}}} />
+                {/* <Search sx={{position:'absolute',left:450,top:15,fontSize:28,color:'pink'}}/> */}
                 </Box>
               </Drawer>
               <Link to="/login">
